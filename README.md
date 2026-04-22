@@ -4,18 +4,17 @@ Simple scaffold for training a YOLO26n model for object detection.
 
 ## Model Training Tutorial
 
-Install dependencies, OS specific see `pyproject.toml` and `flake.nix` for required packages.
-
-If `nix` is installed:
+This project uses `uv` for the Python environment: [https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```sh
-nix develop
 uv venv
 source .venv/bin/activate
 uv sync
 ```
 
-Scripts **require and use** a CUDA-compatible GPU. See your OS documenation on how to configure. Test with `python -c "import torch; print(torch.cuda.is_available())"`
+Scripts **require and use** a CUDA/ROCm compatible GPU. See your OS specific documenation on how to configure. Test PyTorch with `python -c "import torch; print(torch.cuda.is_available())"`
+
+Depending on your system you may have to install PyTorch into `venv` manually: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 
 ### Training Data
 
