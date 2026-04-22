@@ -1,0 +1,11 @@
+[project]
+name = "computer-vision-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "label-studio>=1.23.0",
+    "ray[tune]>=2.55.0",
+    "ultralytics>=8.4.40",
+]
