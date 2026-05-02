@@ -6,7 +6,7 @@ from ultralytics import YOLO
 def main():
     # Load the custom trained model
     # By default, YOLO saves the best model during training to runs/train/<name>/weights/best.pt
-    model_path = "runs/detect/runs/train/yolo26n_target-7/weights/best.engine"
+    model_path = "runs/detect/runs/train/yolo26n/weights/best.pt"
 
     print(f"Loading model: {model_path}")
     model = YOLO(model_path)
